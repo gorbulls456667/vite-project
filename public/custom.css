@@ -1,0 +1,34 @@
+div.iti {
+  display: block !important;
+}
+
+.iti__flag {
+  background-image: url('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/img/flags.png');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/img/flags@2x.png');
+  }
+}
+
+/* Disable the form button when an invalid number is entered or flag changed to different country */
+.disabled-button {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  pointer-events: none !important;
+  background-color: rgba(1, 116, 199, 0.43) !important;
+}
+
+/* Green border on form field on valid number */
+.valid-phone {
+  border-color: rgb(74, 137, 32) !important;
+  border-width: 3px !important;
+}
+
+/* Red border on form field on invalid number */
+.invalid-phone {
+  border-color: rgb(185, 21, 23) !important;
+  border-width: 3px !important;
+}
